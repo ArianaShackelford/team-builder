@@ -3,6 +3,11 @@ import React, {useState} from 'react';
 const MemberForm = props => {
     const [member, setMember] = useState({name: '', email: '', role: ''})
 
+    const handleChanges = event => {
+        setMember({...member, [event.target.name]: event.target.value})
+    };
+
+    
     return(
         <form>
             <label htmlFor='name'>Name: </label>
@@ -17,6 +22,7 @@ const MemberForm = props => {
                 <option value='wormologist'>Wormologist</option>
                 <option value='larkist'>Larkist</option>
             </select>
+            <button type='submit'>Add Member</button>
         </form>
     )
 }
