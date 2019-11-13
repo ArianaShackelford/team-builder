@@ -10,7 +10,13 @@ const MemberForm = props => {
             <label htmlFor='email'>Email: </label>
             <input id='email' type='email' name='email'/>
             <label htmlFor='role'>Role: </label>
-            <input id='role' type='dropdown' name='role'/>
+            <select id='role'>
+                <option value=''>-- Please choose a role --</option>
+                <option value='jellyfishTrainer'>Jellyfish Trainer</option>
+                <option value='emuWhisperer'>Emu Whisperer</option>
+                <option value='wormologist'>Wormologist</option>
+                <option value='larkist'>Larkist</option>
+            </select>
         </form>
     )
 }
