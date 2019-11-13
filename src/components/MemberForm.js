@@ -8,7 +8,7 @@ const MemberForm = props => {
             <label htmlFor='name'>Name: </label>
             <input id='name' type='text' name='name'/>
             <label htmlFor='email'>Email: </label>
-            <input id='email' type='text' name='email'/>
+            <input id='email' type='email' name='email'/>
             <label htmlFor='role'>Role: </label>
             <input id='role' type='dropdown' name='role'/>
         </form>
