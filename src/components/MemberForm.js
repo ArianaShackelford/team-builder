@@ -42,10 +42,10 @@ const MemberForm = props => {
                 <label htmlFor='role'>Role: </label>
                 <select id='role' name='role' value={member.role} onChange={handleChanges}>
                     <option value='reset'>-- Please choose a role --</option>
-                    <option value='jellyfishTrainer'>Jellyfish Trainer</option>
-                    <option value='emuWhisperer'>Emu Whisperer</option>
-                    <option value='wormologist'>Wormologist</option>
-                    <option value='larkist'>Larkist</option>
+                    <option value='Jellyfish Trainer'>Jellyfish Trainer</option>
+                    <option value='Emu Whisperer'>Emu Whisperer</option>
+                    <option value='Wormologist'>Wormologist</option>
+                    <option value='Larkist'>Larkist</option>
                 </select>
                 <button type='submit'>Add Member</button>
             </MemberImput>
